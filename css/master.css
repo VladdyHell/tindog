@@ -64,6 +64,10 @@ h1 {
     line-height: 1.5;
 }
 
+P {
+    color: #8f8f8f;
+}
+
 .download-btn {
     margin: 5% 3% 5% 0;
 }
@@ -149,8 +153,7 @@ h1 {
 /* Pricing Section */
 
 #pricing {
-    padding: calc(4.86111111111111rem + 2.430555555555555vw)
-        /*100px*/
+    padding: calc(4.86111111111111rem + 2.430555555555555vw)/*100px*/
     ;
     text-align: center;
 }
@@ -169,4 +172,8 @@ h1 {
 #pricing h2 {
     font-size: calc(1.62rem + 1.62vw);
     font-weight: 700;
+}
+
+.pricing-col {
+    padding: 3% 2%;
 }
