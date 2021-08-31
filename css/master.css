@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap');
+
+:root {
+    position: relative;
+    overflow-x: hidden;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Title Section */
+
+#title {
+    background-color: #FF369B;
+    color: #EEEEEE;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 calc(3.5rem + 1.75vw)/*4.5rem*/;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: calc(1.35rem + 1.35vw)/*2.5rem*/;
+    font-weight: 700;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Title Content */
+
+h1 {
+    font-size: calc(2rem + 2vw)/*3.5rem*/;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+.tindog-app {
+    left: 50%;
+    margin: 5% 0 0 -30%;
+    position: relative;
+    transform: rotate(25deg);
+    width: calc(10.41666666666667rem + 5.208333333333333vw)/*60%*/;
+}
+
+/* Features */
+
+#features {
+    padding: 7% 15%;
+}
+
+.features-box {
+    padding: 4.5%;
+    text-align: center;
+}
+
+.features-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.features-box p {
+    color: #8f8f8f;
+}
+
+.features-icon {
+    color: #FF69B4;
+    margin-bottom: 1rem;
+}
+
+.features-icon:hover {
+    color: #FF369B;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    background-color: #FF69B4;
+    text-align: center;
+    color: #fff;
+}
+
+#testimonials h2 {
+    font-weight: 700;
+    font-size: calc(1.714285714285714rem + 1.714285714285714vw)/*3rem*/;
+    font-style: italic;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #FF69B4;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: calc(7.666666666666667rem + 3.833333333333333vw)/*15%*/;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Pricing Section */
+
+#pricing {
+    padding: calc(4.86111111111111rem + 2.430555555555555vw)/*100px*/;
+    text-align: center;
+}
+
+#pricing h3 {
+    font-size: calc(0.8099999999999999rem + 0.8099999999999999vw);
+    font-weight: 700;
+}
+
+#pricing h2 {
+    font-size: calc(1.62rem + 1.62vw);
+    font-weight: 700;
+}
