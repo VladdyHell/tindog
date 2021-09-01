@@ -10,16 +10,52 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
 
-:root {
-    font-size: calc(0.525rem + 0.525vw);
+    font-size: calc(8.4px + 0.525vw);
 }
 
 body {
     position: relative;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-weight: 700;
+}
+
+h3 {
+    /* font-size: 1.5rem; */
+    font-size: 24px;
+}
+
+P {
+    color: #8f8f8f;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    /* font-size: 1.25rem; */
+    font-size: 20px;
 }
 
 /* Title Section */
@@ -27,6 +63,7 @@ body {
 #title {
     background-color: #FF3A57;
     color: #EEEEEE;
+    text-align: left;
 }
 
 @media (max-width: 991px) {
@@ -35,24 +72,19 @@ body {
     }
 }
 
-.container-fluid {
+#title .container-fluid {
     padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
 
 .navbar {
-    padding-bottom:
-        /* 0 0 calc(3.5rem + 1.75vw) */
-        4.5rem;
+    padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
-    font-size:
-        /* calc(1.35rem + 1.35vw) */
-        2.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 .nav-item {
@@ -60,54 +92,21 @@ body {
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 19.2px;
     font-weight: 300;
 }
 
 /* Title Content */
-/* @media (max-width: 575px) {
-    .row .col-lg-6:nth-child(1) {
-        padding: 0;
-    }
-} */
 
-h1 {
-    font-size:
-        /* calc(1.95rem + 1.95vw) */
-        3.5rem;
-    font-weight: 900;
+.big-headings {
+    font-size: 3.5rem;
     line-height: 1.5;
-}
-
-/* @media (min-width: 992px) and (max-width: 1103px) {
-    h1 {
-        font-size: calc(1.75rem + 1.75vw)
-    }
-}
-
-@media (min-width: 1104px;) and (max-width: 1040px) {
-    h1 {
-        font-size: calc(1.5rem + 1.5vw)
-    }
-} */
-
-P {
-    color: #8f8f8f;
 }
 
 .download-btn {
     margin: 5% 3% 5% 0;
 }
-
-/*@media (max-width: 498px) {
-    .download-btn {
-        display: block;
-        margin: 5% auto;
-    }
-    h1 {
-        text-align: center;
-    }
-}*/
 
 .tindog-app {
     right: 30%;
@@ -126,16 +125,9 @@ P {
     }
 }
 
-@media (max-width: 767px) {
-    .tindog-app {
-        width: 80%;
-    }
-}
-
 /* Features */
 
 #features {
-    padding: 7% 15%;
     background-color: #FFF;
     position: relative;
     z-index: 1;
@@ -144,15 +136,6 @@ P {
 .features-box {
     padding: 4.5%;
     text-align: center;
-}
-
-.features-box h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.features-box p {
-    color: #8f8f8f;
 }
 
 .features-icon {
@@ -172,15 +155,15 @@ P {
     color: #fff;
 }
 
+#testimonials .container-fluid {
+    padding: 0;
+}
+
 .carousel-item {
     padding: 7% 15%;
 }
 
 #testimonials h2 {
-    font-weight: 700;
-    font-size:
-        /* calc(1.671428571428571rem + 1.671428571428571vw) */
-        3rem;
     font-style: italic;
 }
 
@@ -193,45 +176,26 @@ P {
 #press {
     background-color: #F74C66;
     text-align: center;
-    padding-bottom: 3%;
+    /* padding-bottom: 3%; */
 }
 
 .press-logo {
-    width:
-        /* calc(7.666666666666667rem + 3.833333333333333vw) */
-        /* calc(9 + 4.5vw) */
-        15%;
+    width: 15%;
     min-width: 147.3px;
     margin: 20px 20px 50px;
 }
 
 /* Pricing Section */
 
-#pricing {
-    padding:
-        /* calc(4.86111111111111rem + 2.430555555555555vw) */
-        100px;
+#pricing .container-fluid {
+    padding: 100px;
     text-align: center;
 }
 
-/* @media (max-width: 575px) {
-    #pricing {
-        padding: calc(4.86111111111111rem + 2.430555555555555vw) calc(3.645833333333333rem + 1.822916666666666vw);
+@media (max-width: 575px) {
+    #pricing .container-fluid {
+        padding: 100px 15%;
     }
-} */
-
-#pricing h3 {
-    font-size:
-        /* calc(0.8099999999999999rem + 0.8099999999999999vw) */
-        1.5rem;
-    font-weight: 700;
-}
-
-#pricing h2 {
-    font-size:
-        /* calc(1.62rem + 1.62vw) */
-        3rem;
-    font-weight: 700;
 }
 
 .pricing-col {
@@ -244,51 +208,33 @@ P {
     background-color: #F74C66;
     color: #FFF;
     text-align: center;
-    padding: 7% 15%;
 }
 
 #cta h3 {
-    color: #FFF;
     font-weight: 900;
-    font-size:
-        /* calc(1.95rem + 1.95vw) */
-        3.5rem;
+    font-size: 3.5rem;
     line-height: 1.5;
 }
 
 /* Footer Section */
 
 footer {
-    padding: 7% 15%;
     text-align: center;
 }
 
-footer .social-icon {
+@media (min-width: 1200px) {
+    footer {
+        font-size: 17.6px;
+    }
+}
+
+.social-icon {
+    display: inline-block;
     margin: 20px 10px;
     color: #000;
 }
 
 /* TYPOGRAPHY, SIZING, AND SPACING TWEAKS */
-
-
-/* master.css | http://10.0.0.39:56401/css/master.css */
-
-.nav-link {
-    /* font-size: 1.2rem; */
-    font-size: 19.2px;
-}
-
-.features-box h3 {
-    /* font-size: 1.5rem; */
-    font-size: 24px;
-}
-
-#pricing h3 {
-    /* font-size: 1.5rem; */
-    font-size: 24px;
-}
-
-/* bootstrap.min.css | https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css */
 
 .navbar-toggler-icon {
     /* width: 1.5em; */
@@ -297,24 +243,13 @@ footer .social-icon {
     height: 24px;
 }
 
+/* CHANGING FONT FROM RELATIVE/FLUID TO ABSOLUTE */
 body {
     /* font-size: 1rem; */
     font-size: 16px;
 }
 
-.btn-group-lg>.btn,
-.btn-lg {
-    /* font-size: 1.25rem; */
-    font-size: 20px;
-}
-
-
-@media (min-width: 1200px) {
-    footer {
-        font-size: 17.6px;
-    }
-}
-
+/* PREVENT BUTTON FROM STAKCING */
 @media (min-width: 992px) and (max-width: 1013px) {
 
     #title .btn-group-lg>.btn,
@@ -323,18 +258,14 @@ body {
     }
 }
 
+/* PREVENT HEADING FROM OCCUPYING 5th LINE */
 @media (min-width: 992px) and (max-width: 1007px) {
-    h1 {
-        font-size: 3.4rem !important;
+    .big-headings {
+        font-size: 3.4rem;
     }
 }
 
-#press {
+/* RE-ALIGN IMAGES THE SAME AS THE OTHER ELEMENTS */
+#press .container-fluid {
     padding: 0 15% 3% 15%;
-}
-
-@media (max-width: 575px) {
-    #pricing {
-        padding: 100px 15%;
-    }
 }
