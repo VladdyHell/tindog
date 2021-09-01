@@ -25,7 +25,7 @@ body {
 /* Title Section */
 
 #title {
-    background-color: #FF369B;
+    background-color: #FF3A57;
     color: #EEEEEE;
 }
 
@@ -156,18 +156,18 @@ P {
 }
 
 .features-icon {
-    color: #FF69B4;
+    color: #F74C66;
     margin-bottom: 1rem;
 }
 
 .features-icon:hover {
-    color: #FF369B;
+    color: #FF3A57;
 }
 
 /* Testimonials Section */
 
 #testimonials {
-    background-color: #FF69B4;
+    background-color: #F74C66;
     text-align: center;
     color: #fff;
 }
@@ -191,7 +191,7 @@ P {
 }
 
 #press {
-    background-color: #FF69B4;
+    background-color: #F74C66;
     text-align: center;
     padding-bottom: 3%;
 }
@@ -241,7 +241,7 @@ P {
 /* Call to Action Section */
 
 #cta {
-    background-color: #FF69B4;
+    background-color: #F74C66;
     color: #FFF;
     text-align: center;
     padding: 7% 15%;
