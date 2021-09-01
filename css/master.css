@@ -302,8 +302,8 @@ body {
     font-size: 16px;
 }
 
-#title .btn-group-lg>.btn,
-#title .btn-lg {
+.btn-group-lg>.btn,
+.btn-lg {
     /* font-size: 1.25rem; */
     font-size: 20px;
 }
