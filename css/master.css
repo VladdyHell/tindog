@@ -12,8 +12,8 @@
     user-select: none;
 }
 
-html {
-    font-size: min(max(1rem, 4vw), 16px);
+:root {
+    font-size: calc(0.525rem + 0.525vw);
 }
 
 body {
@@ -42,9 +42,9 @@ body {
 /* Navigation Bar */
 
 .navbar {
-    padding: 0 0 calc(3.5rem + 1.75vw)
-        /*4.5rem*/
-    ;
+    padding-bottom:
+        /* 0 0 calc(3.5rem + 1.75vw) */
+        4.5rem;
 }
 
 .navbar-brand {
@@ -65,11 +65,11 @@ body {
 }
 
 /* Title Content */
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .row .col-lg-6:nth-child(1) {
         padding: 0;
     }
-}
+} */
 
 h1 {
     font-size:
@@ -197,26 +197,28 @@ P {
 }
 
 .press-logo {
-    width: calc(7.666666666666667rem + 3.833333333333333vw)
-        /*15%*/
-    ;
+    width:
+        /* calc(7.666666666666667rem + 3.833333333333333vw) */
+        /* calc(9 + 4.5vw) */
+        15%;
+    min-width: 147.3px;
     margin: 20px 20px 50px;
 }
 
 /* Pricing Section */
 
 #pricing {
-    padding: calc(4.86111111111111rem + 2.430555555555555vw)
-        /*100px*/
-    ;
+    padding:
+        /* calc(4.86111111111111rem + 2.430555555555555vw) */
+        100px;
     text-align: center;
 }
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     #pricing {
         padding: calc(4.86111111111111rem + 2.430555555555555vw) calc(3.645833333333333rem + 1.822916666666666vw);
     }
-}
+} */
 
 #pricing h3 {
     font-size:
@@ -264,4 +266,73 @@ footer {
 footer .social-icon {
     margin: 20px 10px;
     color: #000;
+}
+
+/* TYPOGRAPHY, SIZING, AND SPACING TWEAKS */
+
+
+/* master.css | http://10.0.0.39:56401/css/master.css */
+
+.nav-link {
+    /* font-size: 1.2rem; */
+    font-size: 19.2px;
+}
+
+.features-box h3 {
+    /* font-size: 1.5rem; */
+    font-size: 24px;
+}
+
+#pricing h3 {
+    /* font-size: 1.5rem; */
+    font-size: 24px;
+}
+
+/* bootstrap.min.css | https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css */
+
+.navbar-toggler-icon {
+    /* width: 1.5em; */
+    /* height: 1.5em; */
+    width: 24px;
+    height: 24px;
+}
+
+body {
+    /* font-size: 1rem; */
+    font-size: 16px;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    /* font-size: 1.25rem; */
+    font-size: 20px;
+}
+
+
+@media (min-width: 1200px) {
+    footer {
+        font-size: 17.6px;
+    }
+}
+
+@media (max-width: 1013px) {
+    .btn-lg {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1007px) {
+    h1 {
+        font-size: 3.4rem !important;
+    }
+}
+
+#press {
+    padding: 0 15% 3% 15%;
+}
+
+@media (max-width: 575px) {
+    #pricing {
+        padding: 100px 15%;
+    }
 }
