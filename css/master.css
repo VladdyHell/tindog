@@ -12,6 +12,10 @@
     user-select: none;
 }
 
+html {
+    font-size: min(max(1rem, 4vw), 16px);
+}
+
 body {
     position: relative;
     overflow-x: hidden;
@@ -25,8 +29,14 @@ body {
     color: #EEEEEE;
 }
 
+@media (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+}
+
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -39,9 +49,9 @@ body {
 
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
-    font-size: calc(1.35rem + 1.35vw)
-        /*2.5rem*/
-    ;
+    font-size:
+        /* calc(1.35rem + 1.35vw) */
+        2.5rem;
     font-weight: 700;
 }
 
@@ -55,14 +65,31 @@ body {
 }
 
 /* Title Content */
+@media (max-width: 575px) {
+    .row .col-lg-6:nth-child(1) {
+        padding: 0;
+    }
+}
 
 h1 {
-    font-size: calc(2rem + 2vw)
-        /*3.5rem*/
-    ;
+    font-size:
+        /* calc(1.95rem + 1.95vw) */
+        3.5rem;
     font-weight: 900;
     line-height: 1.5;
 }
+
+/* @media (min-width: 992px) and (max-width: 1103px) {
+    h1 {
+        font-size: calc(1.75rem + 1.75vw)
+    }
+}
+
+@media (min-width: 1104px;) and (max-width: 1040px) {
+    h1 {
+        font-size: calc(1.5rem + 1.5vw)
+    }
+} */
 
 P {
     color: #8f8f8f;
@@ -72,20 +99,46 @@ P {
     margin: 5% 3% 5% 0;
 }
 
+/*@media (max-width: 498px) {
+    .download-btn {
+        display: block;
+        margin: 5% auto;
+    }
+    h1 {
+        text-align: center;
+    }
+}*/
+
 .tindog-app {
-    left: 50%;
-    margin: 5% 0 0 -30%;
-    position: relative;
+    right: 30%;
+    margin: 5% 0 0 0;
+    position: absolute;
     transform: rotate(25deg);
-    width: calc(10.41666666666667rem + 5.208333333333333vw)
-        /*60%*/
+    width: 60%
+        /*calc(11.75rem + 5.875vw)/*60%*/
     ;
+}
+
+@media (max-width: 991px) {
+    .tindog-app {
+        position: static;
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 767px) {
+    .tindog-app {
+        width: 80%;
+    }
 }
 
 /* Features */
 
 #features {
     padding: 7% 15%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
 }
 
 .features-box {
@@ -119,11 +172,15 @@ P {
     color: #fff;
 }
 
+.carousel-item {
+    padding: 7% 15%;
+}
+
 #testimonials h2 {
     font-weight: 700;
-    font-size: calc(1.714285714285714rem + 1.714285714285714vw)
-        /*3rem*/
-    ;
+    font-size:
+        /* calc(1.671428571428571rem + 1.671428571428571vw) */
+        3rem;
     font-style: italic;
 }
 
@@ -146,34 +203,65 @@ P {
     margin: 20px 20px 50px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* Pricing Section */
 
 #pricing {
-    padding: calc(4.86111111111111rem + 2.430555555555555vw)/*100px*/
+    padding: calc(4.86111111111111rem + 2.430555555555555vw)
+        /*100px*/
     ;
     text-align: center;
 }
 
 @media (max-width: 575px) {
     #pricing {
-        padding: calc(4.86111111111111rem + 2.430555555555555vw) calc(2.430555555555555rem + 1.215277777777778vw);
+        padding: calc(4.86111111111111rem + 2.430555555555555vw) calc(3.645833333333333rem + 1.822916666666666vw);
     }
 }
 
 #pricing h3 {
-    font-size: calc(0.8099999999999999rem + 0.8099999999999999vw);
+    font-size:
+        /* calc(0.8099999999999999rem + 0.8099999999999999vw) */
+        1.5rem;
     font-weight: 700;
 }
 
 #pricing h2 {
-    font-size: calc(1.62rem + 1.62vw);
+    font-size:
+        /* calc(1.62rem + 1.62vw) */
+        3rem;
     font-weight: 700;
 }
 
 .pricing-col {
     padding: 3% 2%;
+}
+
+/* Call to Action Section */
+
+#cta {
+    background-color: #FF69B4;
+    color: #FFF;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+#cta h3 {
+    color: #FFF;
+    font-weight: 900;
+    font-size:
+        /* calc(1.95rem + 1.95vw) */
+        3.5rem;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+footer .social-icon {
+    margin: 20px 10px;
+    color: #000;
 }
